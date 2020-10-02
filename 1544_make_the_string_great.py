@@ -1,4 +1,4 @@
-# 1544 Make the String Great
+# 1544 - Make the String Great
 
 class Solution:
 	def makeGood(self, s: str) -> str:
