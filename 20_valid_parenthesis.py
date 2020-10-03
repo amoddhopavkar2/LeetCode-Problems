@@ -3,16 +3,16 @@
 class Solution:
 	def isValid(self, s:str) -> bool:
 		stack = []
-		open_list = ['(', '{', '[']
-		close_list = [')', '}', ']']
+		open_lst = ['(', '{', '[']
+		close_lst = [')', '}', ']']
 
 		for bracket in s:
-			if bracket in open_list:
+			if bracket in open_lst:
 				stack.append(bracket)
-			elif bracket in close_list:
-				index = close_list.index(bracket)
+			elif bracket in close_lst:
+				index = close_lst.index(bracket)
 				
-				if len(stack) > 0 and open_list[index] == stack[-1]:
+				if len(stack) > 0 and open_lst[index] == stack[-1]:
 					stack.pop()
 				else:
 					return False
