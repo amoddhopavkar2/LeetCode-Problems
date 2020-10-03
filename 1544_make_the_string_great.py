@@ -14,4 +14,3 @@ class Solution:
 					break
 			s = temp
 		return s
-
